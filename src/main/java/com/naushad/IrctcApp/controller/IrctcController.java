@@ -24,9 +24,8 @@ public class IrctcController {
     private IrctcInterface irctcInterface;
 
     @PostMapping("/book")
-    public ResponseEntity<Object> bookTicket(@RequestBody Passenger passenger, WebRequest webRequest){
+    public ResponseEntity<Object> bookTicket(@RequestBody Passenger passenger,WebRequest webRequest){
         Ticket ticket = irctcInterface.bookTicket(passenger);
-
         return new ResponseEntity<>(ticket, HttpStatus.OK);
     }
 
