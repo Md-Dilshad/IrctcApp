@@ -1,11 +1,10 @@
-package com.naushad.IrctcApp.service;
+package com.dilshad.IrctcApp.service;
 
-import com.naushad.IrctcApp.model.Passenger;
-import com.naushad.IrctcApp.model.PersonalDetail;
-import com.naushad.IrctcApp.model.Refund;
-import com.naushad.IrctcApp.model.Ticket;
+import com.dilshad.IrctcApp.model.Passenger;
+import com.dilshad.IrctcApp.model.PersonalDetail;
+import com.dilshad.IrctcApp.model.Refund;
+import com.dilshad.IrctcApp.model.Ticket;
 
-import java.util.Date;
 import java.util.List;
 
 public interface IrctcInterface {

@@ -1,20 +1,18 @@
-package com.naushad.IrctcApp.controller;
+package com.dilshad.IrctcApp.controller;
 
 
-import com.naushad.IrctcApp.model.Passenger;
-import com.naushad.IrctcApp.model.PersonalDetail;
-import com.naushad.IrctcApp.model.Refund;
-import com.naushad.IrctcApp.model.Ticket;
-import com.naushad.IrctcApp.service.IrctcInterface;
+import com.dilshad.IrctcApp.model.Passenger;
+import com.dilshad.IrctcApp.model.PersonalDetail;
+import com.dilshad.IrctcApp.model.Refund;
+import com.dilshad.IrctcApp.model.Ticket;
+import com.dilshad.IrctcApp.service.IrctcInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.WebRequest;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.sql.SQLOutput;
 import java.util.List;
 
 @RestController
@@ -56,7 +54,9 @@ public class IrctcController {
 
     @DeleteMapping("/delete/{aadhaarNo}")
     public String deleteByAadhaarNo(@PathVariable String aadhaarNo){
+        System.out.println(aadhaarNo);
         return irctcInterface.deleteByAadhaarNo(aadhaarNo);
+
     }
 
 }

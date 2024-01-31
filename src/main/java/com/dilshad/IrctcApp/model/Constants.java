@@ -1,4 +1,4 @@
-package com.naushad.IrctcApp.model;
+package com.dilshad.IrctcApp.model;
 
 public class Constants {
     public enum FoodType {

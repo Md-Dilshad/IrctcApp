@@ -1,4 +1,4 @@
-package com.naushad.IrctcApp.model.exception;
+package com.dilshad.IrctcApp.model.exception;
 
 public class BookingFailedException extends RuntimeException{
 
